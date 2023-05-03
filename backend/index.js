@@ -20,7 +20,6 @@ import postRoutes from "./routes/posts.js"
 //middlewares
 import { verifyToken } from "./middleware/auth.js";
 
-
 //models
 import User from "./models/User.js";
 import Post from "./models/Post.js";
