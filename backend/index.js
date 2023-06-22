@@ -14,7 +14,7 @@ import {createPost} from "./controllers/posts.js"
 
 //routes
 import authRoutes from "./routes/auth.js"
-import userRoutes from "./routes/user.js" 
+import userRoutes from "./routes/users.js" 
 import postRoutes from "./routes/posts.js"
 
 //middlewares

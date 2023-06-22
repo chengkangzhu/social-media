@@ -2,14 +2,14 @@ import jwt from "jsonwebtoken";
 
 export const verifyToken = async (req, res, next) => {
 	try {
-		const { authorization } = req.headers;
-		if (!authorization) {
+		const auth =  req.header("Authorization")
+		if (!auth) {
 			return res
 				.status(401)
 				.json({ message: "No authorization header found" });
 		}
 
-		const token = authHeader.split(" ")[1];
+		const token = auth.split(" ")[1];
 		if (!token) {
 			return res.status(401).json({ message: "No token found" });
 		}
